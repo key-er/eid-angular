@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> </title>
+</head>
+<body>
+  <h2> {{$ctrl.title}} </h2>
+
+  <input type="text" ng-model="$ctrl.typedText" name="text" >
+
+  <button ng-click="$ctrl.handleSubmit()"> Search Now! </button>
+
+  <div>
+    <list-thesaurus thesaurii="$ctrl.thesaurii" />
+  </div>
+
+  <div>
+    <h3> Check History </h3>
+    <button ng-click="$ctrl.showHideHistory()"> Show History </button>
+  </div>
+
+  <div>
+    <input ng-if="$ctrl.viewhistory" type="date" ng-model="$ctrl.seletectedDate" ng-change="$ctrl.handleDateSelector()" name="dateinput" />
+  </div>
+
+  <div>
+    <list-history words="$ctrl.words" />
+  </div>
+
+  </div>
+
+</body>
+</html>
