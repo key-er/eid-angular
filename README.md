@@ -6,6 +6,7 @@ oxford dictionary api
 steps for up and running
 
 * `npm install`
+* edit `vi config.js`
 * `nodemon server/index.js`
 * `mongod --dbpath=data/db/ (run mongod)`
 * get the shell to mongodb  `mongo --host 127.0.0.1:27017` Some common commands to run under mongod shell
