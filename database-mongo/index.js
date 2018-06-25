@@ -2,8 +2,8 @@ const mongoose = require('mongoose')
 const connection = mongoose.connection;
 
 
-
-mongoose.connect('mongodb://localhost/angular');
+const MONGODB_URI = process.env.DB_URI  || 'mongodb://localhost/angular'
+mongoose.connect(MONGODB_URI);
 
 var db = mongoose.connection;
 

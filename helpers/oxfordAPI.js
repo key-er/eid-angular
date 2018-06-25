@@ -1,19 +1,21 @@
 const request = require('request');
 const utils = require('./utils.js')
-// const config = require('../configs.js')
+// const config = require('../config.js')
 try {
-  const config = require('../config.js')
+  console.log('no exception')
+  config = require('../config.js')
 }
 
 catch(e) {
+  console.log('hit exception')
   config = {
-    'APP_ID': process.env.APP_ID,
+    'APP_ID': process.env.APP_ID ,
     'APP_KEY': process.env.APP_KEY
   }
 }
 
 function searchLexicon(word, cb) {
-
+  console.log(config.APP_ID)
   let options = {
     url: `https://od-api.oxforddictionaries.com/api/v1/entries/en/${word}/synonyms;antonyms`,
     headers: {
