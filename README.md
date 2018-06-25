@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## my-app
 
 Done via react way
@@ -38,4 +39,25 @@ npm run server-dev (runs nodemon)
 
 
 reference: https://reactjs.org/tutorial/tutorial.html
+=======
+# eid-angular
+oxford dictionary api
+
+
+
+steps for up and running
+
+* `npm install`
+* edit `vi config.js`
+* `nodemon server/index.js`
+* `mongod --dbpath=data/db/ (run mongod)`
+* get the shell to mongodb  `mongo --host 127.0.0.1:27017` Some common commands to run under mongod shell
+
+* `show dbs`
+* `use <db_name> e.g use angular`
+* `show collections`
+* `db.<collection_name> e.g db.repos.find({})` note the model 'Thesaurus' defined in schema, auto converts to plural collection_name
+
+```
+>>>>>>> a13aaecca24d80ca715f12cccddb5c89bb2cea07
 
